@@ -1,0 +1,76 @@
+root@96380bb2989d:/shared/example-data# gnpy-transmission-example -v -e eqpt_config.json Inf_Topology_V018.xls 'trx Node_4' 'trx DC_Site_B' --show-channels -po=3.5
+INFO:gnpy.tools.cli_examples:source = 'trx Node_4'
+INFO:gnpy.tools.cli_examples:destination = 'trx DC_Site_B'
+There are 2 channels propagating
+Power mode is set to True
+=> it can be modified in eqpt_config.json - Span
+
+There are 1 fiber spans over 12 km between trx Node_4 and trx DC_Site_B
+
+Now propagating between trx Node_4 and trx DC_Site_B:
+
+Propagating with input power = 3.50 dBm:
+Transceiver trx Node_4
+  GSNR (0.1nm, dB):          37.00
+  GSNR (signal bw, dB):      32.92
+  OSNR ASE (0.1nm, dB):      37.00
+  OSNR ASE (signal bw, dB):  32.92
+  CD (ps/nm):                0.00
+  PMD (ps):                  0.00
+Roadm roadm Node_4
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in Node_4 to DC_Site_B
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (Node_4 → DC_Site_B)-NC-DW-6911
+  type_variety:                SSMF
+  length (km):                 11.93
+  pad att_in (dB):             10.61
+  total loss (dB):             13.00
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -9.50
+Edfa west edfa in DC_Site_B to Node_4
+  type_variety:           Provider_X
+  effective gain(dB):     21.00
+  (before att_in and before output VOA)
+  noise figure (dB):      5.57
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -6.49
+  Power Out (dBm):        14.51
+  Delta_P (dB):           8.00
+  target pch (dBm):       11.50
+  effective pch (dBm):    11.50
+  output VOA (dB):        8.00
+Roadm roadm DC_Site_B
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Transceiver trx DC_Site_B
+  GSNR (0.1nm, dB):          33.78
+  GSNR (signal bw, dB):      29.70
+  OSNR ASE (0.1nm, dB):      33.79
+  OSNR ASE (signal bw, dB):  29.70
+  CD (ps/nm):                196.85
+  PMD (ps):                  494974746830.58
+
+Transmission result for input power = 3.50 dBm:
+  Final GSNR (0.1 nm): 33.78 dB
+
+The GSNR per channel at the end of the line is:
+Ch. #   Channel frequency (THz)       Channel power (dBm)    OSNR ASE (signal bw, dB)     SNR NLI (signal bw, dB)        GSNR (signal bw, dB)
+    1                    192.00                      3.50                       29.70                       57.07                       29.70
+    2                    192.10                      3.50                       29.70                       57.07                       29.70
+root@96380bb2989d:/shared/example-data#
+

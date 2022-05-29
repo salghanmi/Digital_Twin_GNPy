@@ -1,0 +1,223 @@
+# gnpy-transmission-example -v -e eqpt_config.json Inf_Topology_V018.xls 'trx DC_Site_A' 'trx DC_Site_B' --show-channels -po=3.5
+INFO:gnpy.tools.cli_examples:source = 'trx DC_Site_A'
+INFO:gnpy.tools.cli_examples:destination = 'trx DC_Site_B'
+There are 2 channels propagating
+Power mode is set to True
+=> it can be modified in eqpt_config.json - Span
+
+There are 5 fiber spans over 156 km between trx DC_Site_A and trx DC_Site_B
+
+Now propagating between trx DC_Site_A and trx DC_Site_B:
+
+Propagating with input power = 3.50 dBm:
+Transceiver trx DC_Site_A
+  GSNR (0.1nm, dB):          37.00
+  GSNR (signal bw, dB):      32.92
+  OSNR ASE (0.1nm, dB):      37.00
+  OSNR ASE (signal bw, dB):  32.92
+  CD (ps/nm):                0.00
+  PMD (ps):                  0.00
+Roadm roadm DC_Site_A
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in DC_Site_A to Node_1
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (DC_Site_A → Node_1)-NC-DW-6907
+  type_variety:                SSMF
+  length (km):                 69.83
+  pad att_in (dB):             0.00
+  total loss (dB):             13.97
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -10.47
+Edfa west edfa in Node_1 to DC_Site_A
+  type_variety:           Provider_X
+  effective gain(dB):     20.97
+  (before att_in and before output VOA)
+  noise figure (dB):      5.58
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -7.45
+  Power Out (dBm):        13.52
+  Delta_P (dB):           7.00
+  target pch (dBm):       10.50
+  effective pch (dBm):    10.50
+  output VOA (dB):        7.00
+Roadm roadm Node_1
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in Node_1 to Node_2
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (Node_1 → Node_2)-NC-DW-6908
+  type_variety:                SSMF
+  length (km):                 42.00
+  pad att_in (dB):             4.60
+  total loss (dB):             13.00
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -9.50
+Edfa west edfa in Node_2 to Node_1
+  type_variety:           Provider_X
+  effective gain(dB):     21.00
+  (before att_in and before output VOA)
+  noise figure (dB):      5.57
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -6.49
+  Power Out (dBm):        14.51
+  Delta_P (dB):           8.00
+  target pch (dBm):       11.50
+  effective pch (dBm):    11.50
+  output VOA (dB):        8.00
+Roadm roadm Node_2
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in Node_2 to Node_3
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (Node_2 → Node_3)-NC-DW-6909
+  type_variety:                SSMF
+  length (km):                 4.83
+  pad att_in (dB):             12.03
+  total loss (dB):             13.00
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -9.50
+Edfa west edfa in Node_3 to Node_2
+  type_variety:           Provider_X
+  effective gain(dB):     21.00
+  (before att_in and before output VOA)
+  noise figure (dB):      5.57
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -6.49
+  Power Out (dBm):        14.51
+  Delta_P (dB):           8.00
+  target pch (dBm):       11.50
+  effective pch (dBm):    11.50
+  output VOA (dB):        8.00
+Roadm roadm Node_3
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in Node_3 to Node_4
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (Node_3 → Node_4)-NC-DW-6910
+  type_variety:                SSMF
+  length (km):                 27.83
+  pad att_in (dB):             7.43
+  total loss (dB):             13.00
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -9.50
+Edfa west edfa in Node_4 to Node_3
+  type_variety:           Provider_X
+  effective gain(dB):     21.00
+  (before att_in and before output VOA)
+  noise figure (dB):      5.57
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -6.49
+  Power Out (dBm):        14.51
+  Delta_P (dB):           8.00
+  target pch (dBm):       11.50
+  effective pch (dBm):    11.50
+  output VOA (dB):        8.00
+Roadm roadm Node_4
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Edfa east edfa in Node_4 to DC_Site_B
+  type_variety:           Provider_X
+  effective gain(dB):     12.00
+  (before att_in and before output VOA)
+  noise figure (dB):      11.00
+  (including att_in)
+  pad att_in (dB):        1.00
+  Power In (dBm):         6.51
+  Power Out (dBm):        18.51
+  Delta_P (dB):           12.00
+  target pch (dBm):       15.50
+  effective pch (dBm):    15.50
+  output VOA (dB):        12.00
+Fiber          fiber (Node_4 → DC_Site_B)-NC-DW-6911
+  type_variety:                SSMF
+  length (km):                 11.93
+  pad att_in (dB):             10.61
+  total loss (dB):             13.00
+  (includes conn loss (dB) in: 0.00 out: 0.00)
+  (conn loss out includes EOL margin defined in eqpt_config.json)
+  pch out (dBm): -9.50
+Edfa west edfa in DC_Site_B to Node_4
+  type_variety:           Provider_X
+  effective gain(dB):     21.00
+  (before att_in and before output VOA)
+  noise figure (dB):      5.57
+  (including att_in)
+  pad att_in (dB):        0.00
+  Power In (dBm):         -6.49
+  Power Out (dBm):        14.51
+  Delta_P (dB):           8.00
+  target pch (dBm):       11.50
+  effective pch (dBm):    11.50
+  output VOA (dB):        8.00
+Roadm roadm DC_Site_B
+  effective loss (dB):  0.00
+  pch out (dBm):        3.50
+Transceiver trx DC_Site_B
+  GSNR (0.1nm, dB):          29.01
+  GSNR (signal bw, dB):      24.93
+  OSNR ASE (0.1nm, dB):      31.73
+  OSNR ASE (signal bw, dB):  27.65
+  CD (ps/nm):                2580.93
+  PMD (ps):                  857321409974.11
+
+Transmission result for input power = 3.50 dBm:
+  Final GSNR (0.1 nm): 29.01 dB
+
+The GSNR per channel at the end of the line is:
+Ch. #   Channel frequency (THz)       Channel power (dBm)    OSNR ASE (signal bw, dB)     SNR NLI (signal bw, dB)        GSNR (signal bw, dB)
+    1                    192.00                      3.49                       27.65                       28.25                       24.93
+    2                    192.10                      3.49                       27.64                       28.25                       24.93
+root@96380bb2989d:/shared/example-data#
